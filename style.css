@@ -241,9 +241,9 @@ ul { list-style: none; }
 
 .card__price span {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--muted);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .card__features {
