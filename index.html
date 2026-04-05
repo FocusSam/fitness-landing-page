@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RESET — Фитнес-клуб в Москве</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="logo-wrap">
+        <!-- Замените logo.svg на свой файл логотипа -->
+        <svg class="logo" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" aria-label="RESET">
+          <rect width="240" height="80" fill="none"/>
+          <text x="12" y="62" font-family="'Bebas Neue', Arial Black, sans-serif"
+                font-size="64" fill="#FFFFFF" letter-spacing="8">RESET</text>
+          <rect x="12" y="68" width="216" height="3" fill="#D72B2B"/>
+        </svg>
+      </div>
+      <p class="hero__sub">Фитнес-клуб &middot; Москва</p>
+      <a href="#contact" class="btn btn--hero">Начать сейчас</a>
+    </div>
+    <div class="hero__scroll">&#8595;</div>
+  </header>
+
+  <!-- О НАС -->
+  <section class="about" id="about">
+    <div class="container">
+      <span class="section-label">О нас</span>
+      <h2 class="section-title">Мы не тренируем тело — мы перезагружаем характер</h2>
+      <p class="about__text">
+        RESET — это пространство, где нет места оправданиям: профессиональные тренеры, серьёзное оборудование и атмосфера, которая заставляет выкладываться на сто процентов.
+        Мы работаем с теми, кто готов меняться по-настоящему — без скидок на слабость и без лишних слов.
+      </p>
+    </div>
+  </section>
+
+  <!-- АБОНЕМЕНТЫ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <span class="section-label">Абонементы</span>
+      <h2 class="section-title">Выбери свой формат</h2>
+      <div class="pricing__grid">
+
+        <div class="card">
+          <div class="card__badge">Старт</div>
+          <div class="card__price">4 900 <span>₽/мес</span></div>
+          <ul class="card__features">
+            <li>Безлимитный зал</li>
+            <li>Групповые занятия</li>
+            <li>Раздевалка и душ</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Выбрать</a>
+        </div>
+
+        <div class="card card--featured">
+          <div class="card__badge card__badge--hot">Хит</div>
+          <div class="card__price">8 500 <span>₽/мес</span></div>
+          <ul class="card__features">
+            <li>Всё из «Старт»</li>
+            <li>2 персональных тренировки</li>
+            <li>Нутрициолог онлайн</li>
+            <li>Гостевой визит</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Выбрать</a>
+        </div>
+
+        <div class="card">
+          <div class="card__badge">PRO</div>
+          <div class="card__price">14 000 <span>₽/мес</span></div>
+          <ul class="card__features">
+            <li>Всё из «Хит»</li>
+            <li>Безлимит на персоналки</li>
+            <li>Криокамера и сауна</li>
+            <li>Приоритетная запись</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Выбрать</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ГАЛЕРЕЯ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <span class="section-label">Галерея</span>
+      <h2 class="section-title">Наш клуб</h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--1">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80" alt="Тренажёрный зал" loading="lazy" />
+      </div>
+      <div class="gallery__item gallery__item--2">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80" alt="Групповые тренировки" loading="lazy" />
+      </div>
+      <div class="gallery__item gallery__item--3">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80" alt="Боксёрский зал" loading="lazy" />
+      </div>
+      <div class="gallery__item gallery__item--4">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80" alt="Кардиозона" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТ -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <h2 class="section-title">Готов к перезагрузке?</h2>
+      <p class="contact__text">Напиши нам в Telegram — ответим в течение 15 минут и подберём оптимальный вариант.</p>
+      <a href="https://t.me/reset_fitclub" class="btn btn--primary btn--large" target="_blank" rel="noopener">
+        <svg class="tg-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.17l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.957.389z"/>
+        </svg>
+        Связаться с нами
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">RESET</span>
+      <span class="footer__info">Москва &middot; &copy; 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>
